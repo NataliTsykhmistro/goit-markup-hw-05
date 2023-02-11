@@ -140,6 +140,8 @@ ul {
 }
 
 .site-nav .link {
+    display: inline-block;
+    position: relative;
     
     padding-top: 32px;
     padding-bottom: 32px;
@@ -149,6 +151,7 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    
 }
 
 .site-nav .link:hover, 
@@ -157,7 +160,25 @@ ul {
 }
 
 .site-nav .link.current {
+    position: relative;
     color: var(--accent-color);
+
+}
+
+.site-nav .link.current::after {
+    content: ""; 
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    max-width: 100%;
+    height: 4px;
+    
+    border-bottom: 4px solid var(--accent-color);
+    border-radius: 2px;
+    
 }
 
 /* контакты шапка */
@@ -184,8 +205,10 @@ ul {
 }
 
 .social-links .item {
+
     padding-top: 32px;
     padding-bottom: 32px;
+    
 }
 
 .contacts-mail,
@@ -623,7 +646,7 @@ img {
 
 .sites-tumb::before {
     position: absolute;
-    display: inline-block;
+    display: block;
     content: "";
 
     top: 0;
