@@ -56,7 +56,7 @@
         <section class="hero overlay">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="button primary">Замовити послугу</button>
+                <button data-modal-open type="button" class="button primary">Замовити послугу</button>
             </div>
         </section>
         <!-- секция особенности -->
@@ -110,9 +110,24 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                     <ul class="work">
-                        <li class="item"><img src="./img/box1.jpg" alt="пишемо програми, алгоритми" width="370" height="294"></li>
-                        <li class="item"><img src="./img/box2.jpg" alt="робимо дизайн телефону на ноутбуці" width="370" height="294"></li>
-                        <li class="item"><img src="./img/box3.jpg" alt="підбираємо кольори для дизайну" width="370" height="294"></li>
+                        <li class="item">
+                            <div class="item-thumb">
+                                <img src="./img/box1.jpg" alt="пишемо програми, алгоритми" width="370" height="294">
+                                <h3 class="title">Десктопні додатки</h3>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-thumb">
+                                <img src="./img/box2.jpg" alt="робимо дизайн телефону на ноутбуці" width="370" height="294">
+                                <h3 class="title">Мобільні додатки</h3>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-thumb">
+                                <img src="./img/box3.jpg" alt="підбираємо кольори для дизайну" width="370" height="294">
+                                <h3 class="title">Дизайнерські рішення</h3>
+                            </div>
+                        </li>
                     </ul>
             </div>
         </section>
@@ -382,5 +397,13 @@
         </div>
     </footer>
     
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close> закрити</button>
+        </div>
+    </div>
+    <script src="./js/modal.js">
+    </script>
 </body>
 </html>
