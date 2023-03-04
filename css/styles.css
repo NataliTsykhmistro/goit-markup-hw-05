@@ -359,7 +359,7 @@ ul {
     z-index: 9;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms var(--timing-function), background-color 250ms var(--timing-function);
+    transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -675,7 +675,7 @@ img {
 
 .team-svg {
     fill: var(--border-clients);
-    transition: fill 250ms var(--timing-function),
+    transition: fill 250ms var(--timing-function);
 }
 
 .team-icon-size:hover, 
